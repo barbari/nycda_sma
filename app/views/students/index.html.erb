@@ -1,0 +1,17 @@
+<h1> Hello</h1>
+
+<ul>
+
+<% @students.each do |student| %>
+	<li> 
+		<span> <%= link_to(student.email, student_path(student)) %> </span>
+		<span> <%= student.first_name %> </span>
+		<span> <%= student.last_name %> </span>
+		
+
+
+	</li>
+
+
+<% end %>
+</ul>

@@ -1,0 +1,12 @@
+<h1> Student Profile</h1>
+
+<button> <%= link_to "Back to students", students_path %> </button>
+<%  if @student %>
+<p>
+	<span> First name:</span> <%=  @student.first_name %>
+	<span> Last name:</span> <%=  @student.last_name %>
+	<span> Phone:</span> <%=  @student.phone %>
+	<span> Status:</span> <%=  @student.status %>
+<%  else %>
+	<p>Student not found</p>
+<%end %>
