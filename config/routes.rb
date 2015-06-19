@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
  root 'students#index'
- resources :students, only: [:index, :show]
+ resources :students
 
   # Example of regular råoute:
   #   get 'products/:id' => 'catalog#view'

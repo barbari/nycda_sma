@@ -1,6 +1,9 @@
 <h1> Student Profile</h1>
 
 <button> <%= link_to "Back to students", students_path %> </button>
+<button> <%= link_to "Edit students", edit_student_path(@student)%> </button>
+
+
 <%  if @student %>
 <p>
 	<span> First name:</span> <%=  @student.first_name %>
